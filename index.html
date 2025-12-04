@@ -6,75 +6,6 @@
     <title>8 Ağustos Mutluluk Günü 💖</title>
     <style>
         body {<!-- MESAJ BLOĞU: burayı body içindeki uygun bir yere (ör. <body> açıldıktan sonra) yapıştır -->
-<style>
-  /* Mesaj kutusu stilleri — kolayca değiştirebilirsin */
-  #yigitMesaj {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 6vh;
-    z-index: 9999;
-    background: rgba(255,255,255,0.95);
-    border-radius: 12px;
-    padding: 18px 22px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #111;
-    max-width: 720px;
-    text-align: center;
-    line-height: 1.45;
-    font-size: 18px;
-  }
-  #yigitMesaj small { display:block; margin-top:8px; color:#666; font-size:13px; }
-  #yigitMesaj .closeBtn {
-    position: absolute;
-    right: 10px;
-    top: 8px;
-    background: transparent;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    color:#888;
-  }
-  @media (max-width:600px){
-    #yigitMesaj { font-size:16px; padding:14px 16px; left:50%; width:92%; transform: translateX(-50%); }
-  }
-</style>
-
-<div id="yigitMesaj" role="dialog" aria-label="Mesaj">
-  <button class="closeBtn" aria-label="Kapat" title="Kapat">✕</button>
-  <div>
-    ne olursa olsun hep gülümse mutlu ol<br>
-    <strong>#yasaa</strong><br>
-    umalım her şey istediğin gibi olur<br>
-    <em>cici kal</em>
-    <small>(İstersen bu mesajı kapatıp siteye bakmaya devam edebilirsin.)</small>
-  </div>
-</div>
-
-<script>
-  // Kapatma işlevi — ve localStorage ile 1 gün boyunca tekrar göstermeme opsiyonu
-  (function(){
-    var msg = document.getElementById('yigitMesaj');
-    var btn = msg.querySelector('.closeBtn');
-    // Eğer kullanıcı daha önce kapattıysa 1 gün gösterme
-    try {
-      var hiddenUntil = localStorage.getItem('yigitMesajGizle');
-      if (hiddenUntil && Date.now() < Number(hiddenUntil)) {
-        msg.style.display = 'none';
-      }
-    } catch(e){}
-    btn.addEventListener('click', function(){
-      msg.style.display = 'none';
-      try {
-        // 24 saat boyunca tekrar gösterme
-        var expire = Date.now() + 24 * 60 * 60 * 1000;
-        localStorage.setItem('yigitMesajGizle', String(expire));
-      } catch(e){}
-    });
-  })();
-</script>
-<!-- /MESAJ BLOĞU -->
             margin: 0;
             padding: 0;
             background: linear-gradient(to bottom, #e0f7fa, #fce4ec, #f3e5f5, #efebe9, #ffffff);
@@ -137,7 +68,7 @@
         Ama sen benim en büyük mutluluğumsun, benim güneşimsin, kutup yıldızımsın.<br>
         Seni çok seviyorummmmmmmmmmmmmmm 💫<br>
         Bugün sadece senin ya da benim mutluluk günümüz değil, <strong>bizim</strong> günümüz.<br>
-        Hep mutlu olalım... 🌸</p>
+        Hep mutlu olalım...🌸(ne olursa olsun hep gülümse mutlu ol #yasaa umalım ki her şey gönlünce olur cici kal ⭐️🩵)</p>
 
         <div class="flowers">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Red_rose.png/240px-Red_rose.png" alt="Gül">
